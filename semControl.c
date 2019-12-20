@@ -85,6 +85,7 @@ int main(int argc, char* argv[]){
     while(read(fd, readBuffer, 256) >= 256){
         printf("%s", readBuffer);
     }
+    printf("\n");
 
     semctl(semid, IPC_RMID, 0);
     printf("Semaphore removed!\n");
