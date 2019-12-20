@@ -10,6 +10,7 @@
 #include <errno.h>
 
 #define IPC_KEY 2148
+#define SEG_SIZE 256
 
 #ifndef semun
 union semun {
